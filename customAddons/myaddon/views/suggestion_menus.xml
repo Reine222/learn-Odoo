@@ -1,0 +1,15 @@
+
+<odoo>
+ <!-- Action pour ouvrir la vue -->
+    <record id="suggestion_action" model="ir.actions.act_window">
+        <field name="name">Suggestions Clients</field>
+        <field name="res_model">suggestion.suggestion</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <!-- Menu principal -->
+    <menuitem id="suggestion_menu_root" name="Suggestion Client"/>
+
+    <!-- Menu enfant avec action -->
+    <menuitem id="suggestion_menu" name="Liste des suggestions" parent="suggestion_menu_root" action="suggestion_action"/>
+</odoo>
